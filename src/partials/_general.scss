@@ -1,0 +1,110 @@
+html {
+    font-size: 62.5%; 
+}
+
+.App {
+    user-select: none;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    font-family: Rufina, sans-serif;
+    font-size: 8.6rem;
+    color: $dark-green;
+    line-height: 10.621rem;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 6.4rem;
+    color: $dark-green;
+}
+
+h3 {
+    width: 70%;
+    font-size: 2.4rem;
+    color: $medium-green;
+    line-height: 5.28rem;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+.primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25.8rem;
+    height: 7.4rem;
+    border-radius: 0.3rem;
+    background-color: $dark-green;
+    box-shadow: 0.6rem 3.3rem 5.9rem 0 rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+    
+    &:hover {
+        border: 0.3rem solid;
+        background-color: transparent;
+        color: $dark-green;
+        transition: 1s;
+    }
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 6rem;
+    border: 0.2rem solid;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    color: $dark-green;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        border: 0.2rem solid transparent;
+        background-color: $dark-green;
+        color: $white;
+        transition: 1s;
+    }
+
+}
+
+@media only screen and (max-width: 1750px) {
+    h1 {
+        font-size: 7.2rem;
+        line-height: 10rem;
+    }
+
+    h3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+
+    h2 {
+        font-size: 4.6rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .primary-btn {
+        font-size: 1.6rem;
+    }
+
+}

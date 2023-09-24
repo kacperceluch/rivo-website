@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .img-container {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        height: 56.6rem;
+        
+        img {
+            width: 60%;
+            object-fit: contain;
+        }   
+    }
+
+    .card-text {
+        text-align: center;
+
+        .item-title {
+            margin-bottom: 1.2rem;
+            color: $dark-black;
+            font-weight: 600;
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            color: $light-black;
+
+            p {
+                color: $light-black;
+            }
+
+            .line {
+                background-color: $light-black;
+                width: 0.1rem;
+                height: 2.7rem;
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+                gap: 0.9rem;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        .img-container {
+            height: auto;
+            margin: 4rem 0;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+}

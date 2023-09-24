@@ -1,0 +1,81 @@
+.shop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 11.4rem 17.4rem;
+    text-align: center;
+
+    .shop-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.6rem;
+        color: $dark-green;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 43rem);
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .secondary-btn {
+        padding: 1.6rem 5.5rem;
+        text-transform: none;
+        
+        span {
+            margin-right: 1.8rem ;
+        }
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .shop {
+        margin: 11.4rem 8rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .shop {
+        .cards {
+            grid-template-columns: repeat(3, 33rem);
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .shop {
+        text-align: center;
+        .cards {
+            grid-template-columns: repeat(2, 40rem);
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .shop {
+        gap: 1rem;
+
+        .cards {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        .shop-titles {
+            gap: 2rem;
+        }
+
+        .secondary-btn {
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .shop {
+        margin: 6rem 4rem;
+    }
+}

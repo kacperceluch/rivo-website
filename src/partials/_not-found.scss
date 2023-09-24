@@ -1,0 +1,14 @@
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $light-green;
+
+    h1 {
+        font-family: Rufina, sans-serif;
+        font-size: 8.6rem;
+        color: $dark-green;
+        line-height: 10.621rem;
+    }
+}
